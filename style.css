@@ -90,7 +90,6 @@ body {
   justify-content: center;
 }
 
-
 .bar {
   background-color: var(--softRed);
   flex-basis: 100%;
@@ -114,7 +113,7 @@ body {
 }
 
 .line {
-  margin: 0 auto;
+  margin: 10px auto 0;
   width: 90%;
   height: 2px;
   background-color: var(--cream);
