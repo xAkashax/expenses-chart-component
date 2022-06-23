@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+:root {
+  --ff: 'DM Sans', sans-serif;
+  --fs: 18px;
+  --fw-400: 400;
+  --fw-700: 700;
+  --softRed: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --darkBrown: hsl(25, 47%, 15%);
+  --mediumBrown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --veryPaleOrange: hsl(33, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff);
+  font-size: var(--fs);
+  font-weight: var(--fw-400);
+  background-color: var(--cream);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  padding: 0 15px;
+  height: 80%;
+  width: 100vw;
+}
+
+.balance {
+  background-color: var(--softRed);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18%;
+  border-radius: 10px;
+  line-height: 1.5;
+  padding: 10px 25px;
+  margin-bottom: 15px;
+}
+
+.info {
+  opacity: 0.9;
+  color: var(--veryPaleOrange);
+}
+
+.saldo {
+  font-weight: var(--fw-700);
+  font-size: 28px;
+}
+
+.card {
+  background-color: var(--veryPaleOrange);
+  border-radius: 10px;
+}
+
+.card h1 {
+  font-size: 24px;
+  line-height: 2;
+  color: var(--darkBrown);
+  padding: 10px 20px 10px 20px;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 35vh;
+
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.bar {
+  background-color: var(--softRed);
+  flex-basis: 100%;
+  height: 100%;
+  border-radius: 5px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  color: var(--mediumBrown);
+  font-size: 14px;
+  text-align: center;
+}
+
+.days p {
+  flex-basis: 100%;
+  margin: 10px 0;
+}
+
+.line {
+  margin: 0 auto;
+  width: 90%;
+  height: 2px;
+  background-color: var(--cream);
+  border-top: 1px solid hsla(28, 10%, 53%, 0.202);
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+  color: var(--mediumBrown);
+  padding: 10px 20px 30px 20px;
+}
+
+.cash {
+  font-weight: var(--fw-700);
+  font-size: 34px;
+  color: var(--darkBrown);
+  line-height: 1.5;
+}
+
+.last-month {
+  text-align: right;
+  margin-top: 24px;
+}
+
+.percent {
+  font-weight: var(--fw-700);
+  color: var(--darkBrown);
+}
+
+footer {
+  opacity: 0.8;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 530px) {
+  .container {
+    width: 530px;
+  }
+}
