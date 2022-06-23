@@ -6,15 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | Expenses chart component</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main class="container">
-
     <div class="balance">
       <div class="info">
         <p class="one"> My balance</p>
@@ -26,16 +23,16 @@
       <h1> Spending - Last 7 days</h1>
       <div class="charts">
         <div class="bars">
-          <div class="bar b1"></div>
-          <div class="bar b2"></div>
-          <div class="bar b3"></div>
-          <div class="bar b4"></div>
-          <div class="bar b5"></div>
-          <div class="bar b6"></div>
-          <div class="bar b7"></div>
+          <div class="bar" id="mon"></div>
+          <div class="bar" id="tue"></div>
+          <div class="bar" id="wed"></div>
+          <div class="bar" id="thu"></div>
+          <div class="bar" id="fri"></div>
+          <div class="bar" id="sat"></div>
+          <div class="bar" id="sun"></div>
         </div>
         <div class="days">
-          <p> mon</p>
+          <p>mon</p>
           <p>tue</p>
           <p>wed</p>
           <p>thu</p>
@@ -48,7 +45,7 @@
       <div class="summary">
         <div class="total">
           <p class="total-month">Total this month</p>
-          <p class="cash">$478.33</p>
+          <p class="cash"></p>
         </div>
         <div class="last-month">
           <p class="percent">+2.4%</p>
@@ -56,17 +53,15 @@
         </div>
       </div>
     </div>
-
-
   </main>
-
   <footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://www.frontendmentor.io/profile/xAkashax">xAkashax</a>.
     </div>
   </footer>
-
+  <!-- skrypt musi byc oznaczony jako module, aby wczytac potem plik .json poprzez import -->
+  <script type="module" src="app.js"></script>
 </body>
 
 </html>
