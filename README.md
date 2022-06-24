@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/expenses-chart-component-using-js-interactive-8RF9H1mnlO)
+- Live Site URL: [Live Demo](https://enchanting-meerkat-d3dcee.netlify.app/)
 
 ## My process
 
