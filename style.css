@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
-
 :root {
   --ff: 'DM Sans', sans-serif;
   --fs: 18px;
@@ -21,8 +20,8 @@
 }
 
 html {
-  font-family: var(--ff);
   font-size: var(--fs);
+  font-family: var(--ff);
   font-weight: var(--fw-400);
   background-color: var(--cream);
 }
@@ -37,21 +36,21 @@ body {
 }
 
 .container {
-  padding: 0 15px;
   height: 80%;
   width: 100vw;
+  padding: 0 15px;
 }
 
 .balance {
-  background-color: var(--softRed);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
   height: 18%;
   border-radius: 10px;
-  line-height: 1.5;
   padding: 10px 25px;
-  margin-bottom: 15px;
+  background-color: var(--softRed);
+  line-height: 1.5;
 }
 
 .info {
@@ -60,20 +59,20 @@ body {
 }
 
 .saldo {
-  font-weight: var(--fw-700);
   font-size: 28px;
+  font-weight: var(--fw-700);
 }
 
 .card {
-  background-color: var(--veryPaleOrange);
   border-radius: 10px;
+  background-color: var(--veryPaleOrange);
 }
 
 .card h1 {
+  padding: 10px 20px 10px 20px;
   font-size: 24px;
   line-height: 2;
   color: var(--darkBrown);
-  padding: 10px 20px 10px 20px;
 }
 
 .bars {
@@ -81,7 +80,6 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   height: 35vh;
-
 }
 
 .charts {
@@ -91,20 +89,49 @@ body {
 }
 
 .bar {
-  background-color: var(--softRed);
+  position: relative;
   flex-basis: 100%;
-  height: 100%;
-  border-radius: 5px;
   margin: 0 6px;
+  border-radius: 5px;
+  background-color: var(--softRed);
   cursor: pointer;
+}
+
+.today {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.active {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.bar:hover {
+  opacity: 0.5;
+}
+
+.amount {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  opacity: 0.9;
+  visibility: hidden;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  background-color: var(--darkBrown);
+  font-size: 0.5rem;
+  line-height: 40px;
+  font-weight: var(--fw-700);
+  text-align: center;
+  color: var(--cream);
 }
 
 .days {
   display: flex;
   justify-content: space-between;
-  color: var(--mediumBrown);
   font-size: 14px;
   text-align: center;
+  color: var(--mediumBrown);
 }
 
 .days p {
@@ -116,28 +143,28 @@ body {
   margin: 10px auto 0;
   width: 90%;
   height: 2px;
-  background-color: var(--cream);
   border-top: 1px solid hsla(28, 10%, 53%, 0.202);
+  background-color: var(--cream);
 }
 
 .summary {
   display: flex;
   justify-content: space-between;
   opacity: 0.9;
-  color: var(--mediumBrown);
   padding: 10px 20px 30px 20px;
+  color: var(--mediumBrown);
 }
 
 .cash {
-  font-weight: var(--fw-700);
   font-size: 34px;
-  color: var(--darkBrown);
   line-height: 1.5;
+  font-weight: var(--fw-700);
+  color: var(--darkBrown);
 }
 
 .last-month {
-  text-align: right;
   margin-top: 24px;
+  text-align: right;
 }
 
 .percent {
@@ -161,5 +188,9 @@ footer {
 @media screen and (min-width: 530px) {
   .container {
     width: 530px;
+  }
+
+  .amount {
+    font-size: 16px;
   }
 }
